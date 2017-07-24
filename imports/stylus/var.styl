@@ -1,0 +1,126 @@
+// ============= colors ===============
+$main-color = #5b8bff;
+$white = #fff;
+$black  = #000;
+$text-color = #555;
+$grey = #ccc;
+
+$blue       = #419bf9;
+$blue-dark  = #3187e1;
+$blue-light = #009ec4;
+
+//background colors
+$background-primary       =   white;
+$background-off-primary   =   #fdfdfd;
+$background-secondary     =   #f6f6f6;
+$background-tertiary      =   #6d7987;
+
+
+$color-info     = $blue-dark;
+$color-success  = #5CB346;
+$color-warning  = #f0ad4e;
+$color-error    = #d9534f;
+$color-danger   = #d9534f;
+
+
+
+$accent-primary       = $blue;
+$accent-primary-dark  = $blue-dark;
+
+//border colors
+$border-color-primary   = darken($background-primary, 10%);
+$border-color-secondary = darken($background-secondary, 10%);
+$border-color-tertiary  = darken($background-tertiary, 10%);
+$border-color-divider   = $border-color-secondary;
+
+//text colors
+$text-color                     =   $black;
+$text-color-subtle              =   fadeout($text-color, 20%);
+$text-color-very-subtle         =   fadeout($text-color, 50%);
+$text-color-inverse             =   $white;
+$text-color-inverse-subtle      =   fadeout($text-color-inverse, 20%);
+$text-color-inverse-very-subtle =   fadeout($text-color-inverse, 50%);
+
+$text-color-heading   = #434648;
+
+$text-color-link        = $blue;
+$text-color-link-hover  = $blue-dark;
+$text-color-link-active = $blue-dark;
+
+$text-color-selected    = $text-color-inverse;
+
+$text-color-search-match          =   #fff000;
+$text-color-search-current-match  =   #ff8b1a;
+
+
+$component-active-color = $accent-primary-dark;
+$component-active-bg    = $background-primary;
+
+//height
+$header-height = 60px;
+
+//single-salesRecord
+$aside-width = 200px;
+
+// font-weight
+$font-weight-thin       =   200;
+$font-weight-blond      =   300;
+$font-weight-normal     =   400;
+$font-weight-medium     =   500;
+$font-weight-semi-bold  =   600;
+$headings-font-weight   =   600;
+
+// font-size
+$font-size-base     =   14px;
+$font-size-tiny     =   $font-size-base * 0.75; // 10.5px
+$font-size-smaller  =   $font-size-base * 0.86; // 12px
+$font-size-small    =   $font-size-base * 0.93; // 13px
+$font-size          =   $font-size-base;        // 14px
+$font-size-large    =   $font-size-base * 1.14; // 16px
+$font-size-larger   =   $font-size-base * 1.29; // 18px
+
+
+// -------- Spacing -----------
+$spacing-standard       = $font-size-base;
+$spacing-quarter        = $spacing-standard * 0.25;
+$spacing-half           = $spacing-standard * 0.5;
+$spacing-three-quarters = $spacing-standard * 0.75;
+$spacing-double         = $spacing-standard * 2;
+
+
+$padding-base-vertical      =   5px;
+$padding-base-horizontal    =   12px;
+
+$padding-large-vertical     =   9px;
+$padding-large-horizontal   =   16px;
+
+$padding-small-vertical     =   4px;
+$padding-small-horizontal   =   10px;
+
+$border-radius-base     =   3px;
+$border-radius-large    =   5px;
+$border-radius-small    =   2px;
+
+
+//============================== Shadows ===============================//
+
+$standard-shadow-color  = rgba(0, 0, 0, 0.15);
+$standard-shadow        = 0 1px 4px 0 $standard-shadow-color;
+$standard-shadow-up     = 0 -1px 4px 0 $standard-shadow-color;
+$shadow-border          = 0 0.5px 0 $standard-shadow-color, 0 -0.5px 0 $standard-shadow-color, 0.5px 0 0 $standard-shadow-color, -0.5px 0 0 $standard-shadow-color;
+
+//=============================== Buttons ==============================//
+
+$btn-shadow               = $standard-shadow;
+
+$btn-default-bg-color     = darken($background-primary, 0.5%);
+$btn-default-text-color   = $text-color;
+
+$btn-action-bg-color      = $color-success;
+$btn-action-text-color    = $text-color;
+
+$btn-emphasis-bg-color    = #5b90fb;
+$btn-emphasis-text-color  = $text-color-inverse;
+
+$btn-danger-bg-color      = $color-danger;
+$btn-danger-text-color    = $text-color-inverse;

@@ -1,0 +1,168 @@
+.control-aside
+  width $aside-width
+  height 100vh
+  position fixed
+  top 0
+  left 0
+  transition transform .3s
+  transform translateX(-100%)
+  background #1F2E54
+  z-index 5
+  padding-top $header-height
+
+  &.active
+    transform translateX(0)
+
+  .categories-list
+    > li
+      padding 10px 0
+      line-height 30px
+      color $white
+
+      &:hover
+        background alpha($main-color, .1)
+        cursor pointer
+
+  .pinnedMod
+    display block
+    position absolute
+    top $header-height + 10px
+    right 10px
+    color alpha($main-color, .2)
+    width 30px
+    height 30px
+    text-align center
+    line-height 20px
+    font-size 25px
+    transform rotate(45deg)
+    transition .3s
+
+    &.on
+      transform rotate(0)
+      color $main-color
+
+    &:hover
+      cursor pointer
+
+    &:before
+      content '\f08d'
+      font-family FontAwesome
+
+  .nav-list
+    padding-top 20px
+    position relative
+    z-index 10
+
+    .nav-item
+      position relative
+      min-height 50px
+      padding-left 40px
+      line-height 50px
+      border-left 5px solid transparent
+      color $white
+      transition .3s
+
+
+
+      &:hover
+        cursor pointer
+        background #5DB3F5
+        border-left 5px solid #5DB3F5
+
+      &.active
+        background #5DB3F5
+        border-left 5px solid $white
+
+        &:after
+          content '\f061'
+          font-family FontAwesome
+          position absolute
+          transform translateY(-50%)
+          top 50%
+          color $white
+          right 25px
+          font-size 15px
+
+    .top-nav-item
+      &.active
+        background #162240
+        .nav-item-label
+          &:after
+            content '\f068'
+
+      .nav-item-label
+        position relative
+        min-height 50px
+        padding-left 40px
+        line-height 50px
+        color  $white
+        border-left 5px solid transparent
+        transition .3s
+
+        &.active
+          background alpha(#5DB3F5, .8)
+          border-left 5px solid $white
+
+        &:hover
+          cursor pointer
+          background #5DB3F5
+          border-left 5px solid #5DB3F5
+
+        &:after
+          content '\f067'
+          font-family FontAwesome
+          position absolute
+          transform translateY(-50%)
+          top 50%
+          color $white
+          right 25px
+          font-size 15px
+          transition .3s
+
+      .sub-nav-items
+        display none
+
+        &.active
+          display block
+
+        .sub-item
+          position relative
+          text-align left
+          height 30px
+          color $white
+          line-height 30px
+          border-left 5px solid transparent
+          padding 0 20px 0 40px
+          transition .3s
+
+          &:after
+            content '\f061'
+            font-family FontAwesome
+            position absolute
+            transform translateY(-50%)
+            top 50%
+            color $white
+            left 10px
+            font-size 10px
+
+          &:hover
+            cursor pointer
+            background #5DB3F5
+            border-left 5px solid #5DB3F5
+
+          &.active
+            background #5DB3F5
+            padding-left 50px
+            border-left 5px solid $white
+
+
+
+
+.call-phone
+    position absolute
+    bottom 0
+    right 0
+    left 0
+    cursor pointer
+    text-align center
+    color white
